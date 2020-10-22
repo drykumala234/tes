@@ -1,0 +1,577 @@
+<html lang="en">
+ <head> 
+  <meta charset="utf-8"> 
+  <meta name="robots" content="noindex, nofollow"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+    <link rel="stylesheet" type="text/css" href="https://cdn-bimi.akamaized.net/landings/198325/1597936607/css/style.css?1597936607"> 
+
+<link rel="icon" type="image/png" href="lp_p2/profiles/favicon-32x32.png"> 
+  <title>TikTok</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;900&amp;display=swap" rel="stylesheet"> 
+  <style>
+
+		html {
+			margin: 0;
+			padding: 0;
+		}
+	
+		body{
+			margin:0;
+			padding: 0;		
+			color: white;
+			height: 100%;
+			width: 100%;
+			overflow-y: hidden;
+			min-width: 400px;
+			font-family: "Ubuntu";
+			font-weight: 400;
+			
+			background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+			background-size: 400% 400%;
+			animation: gradient 15s ease infinite;
+		}
+		
+		
+		@keyframes gradient {
+			0% {
+				background-position: 0% 50%;
+			}
+			50% {
+				background-position: 100% 50%;
+			}
+			100% {
+				background-position: 0% 50%;
+			}
+		}
+		
+		
+		
+		.page {
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.wrapper {
+			position: relative;
+		}
+		
+	
+		
+		.ur_code span{
+			color:#fff;
+			font-family: Arial, sans-serif;
+			font-weight: bold;
+			font-size: 4em;
+			animation: animate 0.5s linear infinite;
+			margin-left: 20px;
+			margin-top: 10px;
+		
+		}
+		
+		.name {
+			margin-left: 20px;
+			color: white;
+			/*font-weight: 400;*/
+			font-size: 20px;
+			letter-spacing: 0.08em;
+			text-shadow: 1px 1px 3px #555; 
+			/* transform: scale(1, 0.8);*/
+		}
+		
+		.avatar {
+			background-image: url('lp_p2/profiles/profiles/3.jpg');    
+			border: 3px solid white;   
+			width: 80px;
+			height: 80px;		   
+			background-size: cover;		  
+			background-position: top center;		   
+			border-radius: 50%;
+			margin-right: 10px;
+			float: right;		
+		}
+		
+		
+		.hashtag {
+			margin-top: 5px;
+			margin-left: 20px;				
+			font-size: 16px;	
+			text-shadow: 1px 1px 3px #555; 			
+		}
+		
+		
+		video {
+			height: 100vh;
+		}
+		
+		#videoMessage, #overlay {
+			width: 100%; 
+		/*	height:100%; */
+			position: absolute; 
+			top: 0; 
+			left: 0;
+		}
+		
+		#overlay {			
+			background: rgba(200,200,200,0.7);
+			z-index: 100;
+			display: none;
+		    align-items: center;
+		    justify-content: center;
+		}
+		
+		#videoMessage {	
+			z-index:99;
+		/*	height: 100vh;*/
+		}		
+		
+		.heart {
+			clear: both;
+			width: 70px;
+			height: 70px;
+			float: right;
+			margin-right: 15px;
+			text-align: center;
+			font-weight: 900;
+			text-shadow: 1px 1px 3px #555; 
+			margin-top: 30px;
+		}
+		
+		.text {
+			font-weight: bold;
+			font-size: 20px;
+			margin: 0px 0px 10px 0px;
+			/*letter-spacing: 0.1em;*/
+		}
+	
+
+		@keyframes animate {
+			0%,100%
+			{
+				text-shadow: -1.5px -1.5px 0 #0ff,1.5px 1.5px 0 #f00;
+			}
+			25%
+			{
+				text-shadow: 1.5px 1.5px 0 #0ff,-1.5px -1.5px 0 #f00;
+			}
+			50%
+			{
+				text-shadow: 1.5px 1.5px 0 #0ff,-1.5px 1.5px 0 #f00;
+			}
+			75%
+			{
+				text-shadow: -1.5px 1.5px 0 #0ff,1.5px -1.5px 0 #f00;
+			}
+		}
+		/* ***************************************************************** */
+		/* https://colorlib.com/wp/template/colorlib-contact-form/ */
+		/* ***************************************************************** */
+		
+		
+
+		* {
+		  box-sizing: border-box;
+		  -webkit-box-sizing: border-box;
+		  -moz-box-sizing: border-box;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-font-smoothing: antialiased;
+		  -o-font-smoothing: antialiased;
+		  font-smoothing: antialiased;
+		  text-rendering: optimizeLegibility;
+		}
+
+
+		.container {		  
+		  width: 100%;
+		  margin: 0 auto;
+		  position: absolute;
+		  bottom: 0px;
+		}
+
+		#contact input[type="text"],
+		#contact input[type="email"],
+		#contact input[type="tel"],
+		#contact input[type="url"],
+		#contact textarea,
+		#contact button, #contact .btn {
+		  font: 400 12px/16px "Ubuntu", Helvetica, Arial, sans-serif;
+		}
+
+		#contact {		
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+		  
+		
+			padding: 10px;
+			background-color: rgba(0,0,0,0.5);
+			border-radius: 10px;			
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+			right: 10px;
+		}
+		
+		.btn {
+			display: block;
+			text-align: center;
+		}
+		
+/*
+		#contact h3 {
+		  display: block;
+		  font-size: 30px;
+		  font-weight: 300;
+		  margin-bottom: 10px;
+		}
+
+		#contact h4 {
+		  margin: 5px 0 15px;
+		  display: block;
+		  font-size: 13px;
+		  font-weight: 400;
+		}*/
+
+		fieldset {
+		  border: medium none !important;
+		  margin: 0 0 10px;
+		  min-width: 100%;
+		  padding: 0;
+		  width: 100%;
+		}
+
+		#contact input[type="text"],
+		#contact input[type="email"],
+		#contact input[type="tel"],
+		#contact input[type="url"],
+		#contact textarea {
+		  width: 100%;
+		  border: 1px solid #ccc;
+		  background: #FFF;
+		  margin: 0 0 5px;
+		  padding: 10px;
+		}
+
+		#contact input[type="text"]:hover,
+		#contact input[type="email"]:hover,
+		#contact input[type="tel"]:hover,
+		#contact input[type="url"]:hover,
+		#contact textarea:hover {
+		  -webkit-transition: border-color 0.3s ease-in-out;
+		  -moz-transition: border-color 0.3s ease-in-out;
+		  transition: border-color 0.3s ease-in-out;
+		  border: 1px solid #aaa;
+		}
+
+		#contact textarea {
+		  height: 100px;
+		  max-width: 100%;
+		  resize: none;
+		}
+
+		#contact button, #contact .btn {
+		  cursor: pointer;
+		  width: 100%;
+		  letter-spacing: 0.01em;
+		  border: none;
+		  border-radius: 10px;
+		  
+		  background: #DB184B;
+		  color: #FFF;
+		/*  margin: 0 0 5px;*/
+		  padding: 10px;		  
+		  font-size: 24px;
+		  font-weight: bold;
+		  font-family: Arial;
+		  
+		}
+		
+		#contact .btn.choice {
+			width: calc(50% - 10px);
+			margin: 5px;
+			float: left;
+		}
+		
+		#step_1_continue_2 {
+			background: #00b8e6 !important;
+		}
+		
+
+		#contact button:hover, #contact .btn:hover {
+		  background: #43A047;
+		  -webkit-transition: background 0.3s ease-in-out;
+		  -moz-transition: background 0.3s ease-in-out;
+		  transition: background-color 0.3s ease-in-out;
+		}
+
+		#contact button:active, #contact .btn:active {
+		  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+		}
+
+		
+
+		#contact input:focus, #contact .btn:focus
+		#contact textarea:focus {
+		  outline: 0;
+		  border: 1px solid #aaa;
+		}
+
+		::-webkit-input-placeholder {
+		  color: #222;
+		}
+
+		:-moz-placeholder {
+		  color: #222;
+		}
+
+		::-moz-placeholder {
+		  color: #222;
+		}
+
+		:-ms-input-placeholder {
+		  color: #222;
+		}
+		
+		/* ****************** */
+		/* spinning loader    */
+		/* ****************** */
+		
+		:root {
+		  --animation-duration: 0.8s;
+		  --circle-diameter: 50px;
+		  --circle-scale-percent: 0.2;
+		}
+
+		#loader {
+		  position: relative;
+		  left: calc(var(--circle-diameter) * -1);
+		}
+
+		#loader:before,
+		#loader:after {
+		  content: " ";
+		  display: table-cell;
+		  width: var(--circle-diameter);
+		  height: var(--circle-diameter);
+		  border-radius: 50%;
+		  position: absolute;
+		  animation-duration: var(--animation-duration);
+		  animation-name: revolve;
+		  animation-iteration-count: infinite;
+		  animation-timing-function: ease-in-out;
+		  mix-blend-mode: darken;
+		}
+
+		#loader:before {
+		  background: rgb(77, 232, 244);
+		}
+
+		#loader:after {
+		  background: rgb(253, 62, 62);
+		  animation-delay: calc(var(--animation-duration) / -2);
+		}
+
+		@keyframes revolve {
+		  0% {
+			left: 0;
+		  }
+		  25% {
+			transform: scale(calc(1 + var(--circle-scale-percent)));
+		  }
+		  50% {
+			left: var(--circle-diameter);
+		  }
+		  75% {
+			transform: scale(calc(1 - var(--circle-scale-percent)));
+		  }
+		  100% {
+			left: 0;
+		  }
+		}
+		
+		@keyframes shake {
+		  10%, 90% {
+			transform: translate3d(-1px, 0, 0);
+		  }
+		  
+		  20%, 80% {
+			transform: translate3d(2px, 0, 0);
+		  }
+
+		  30%, 50%, 70% {
+			transform: translate3d(-4px, 0, 0);
+		  }
+
+		  40%, 60% {
+			transform: translate3d(4px, 0, 0);
+		  }
+		}
+		
+		/******************************** */
+		/* steps  */
+		/******************************** */
+
+		.step {
+			display: none;
+		}
+		
+		.alert {
+			padding: 10px;
+			font-size: 22px;
+			text-align: center;
+			
+			animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+			transform: translate3d(0, 0, 0);
+			backface-visibility: hidden;
+			perspective: 1000px;
+		}
+
+		.alert-danger {
+			color: red;
+		}
+		
+		@media only screen and (max-width: 600px) {
+		  
+			body {
+				background: black;
+				background-size: auto;
+				animation: none;
+				/*overflow-y: auto;*/
+				overflow-x: hidden;
+			}
+		  
+			.page {
+				height: 100%;
+			}
+			
+			video {
+				height: auto;
+				width: 100vw;
+			}
+			
+			.avatar {
+				width: 60px;
+				height: 60px;
+				margin-right: 20px;
+			}
+			.heart {			
+				width: 50px;
+				height: 50px;			
+				margin-right: 25px;		
+				margin-top: 20px;
+			}
+			
+			/*#contact {*/			
+				/*bottom: 60px;*/ /* to be above status bar in chrome / firefox */
+			/*}*/
+		}
+		
+		@media only screen and (max-height: 600px) and (orientation: landscape) {
+			
+			body {
+				background: black;
+				background-size: auto;
+				animation: none;
+				overflow-y: auto;
+				overflow-x: hidden;	
+				min-height: 600px;
+			}
+			
+			.page {
+				height: 100%;
+			}
+			
+			/*#videoMessage {					
+				height: 100%;
+			}	*/
+			
+			video {
+				height: 600px;
+				width: auto;				
+			}
+			
+			.avatar {
+				width: 60px;
+				height: 60px;
+				margin-right: 20px;
+			}
+			.heart {			
+				width: 50px;
+				height: 50px;			
+				margin-right: 25px;		
+				margin-top: 20px;
+			}
+			
+			/*#contact {*/			
+			/*	bottom: 60px; *//* to be above status bar in chrome / firefox */
+			/*}*/
+			
+		}
+		
+		
+		
+	</style> 
+ </head> 
+ <body> 
+  <div class="page"> 
+   <div class="wrapper"> 
+    <video id="back_video" autoplay="" loop="" muted playsinline="" poster="https://1.bp.blogspot.com/-BDY6KRP7H3Y/X5BlfIl6YDI/AAAAAAAAAFE/bLJudTwC_RMgEZEkyb7ok0Y7RhAHGfXQwCNcBGAsYHQ/s1657/tru.kait___B58XDEpJ9-9___.jpg "> 
+     <source src="https://cdn-cd.akamaized.net/landings/190703/1591089812/images/coub.mp4" type="video/mp4"> 
+    </video> 
+    <div id="videoMessage" style="height: 600px;"> 
+     <div class="ur_code"> 
+      <span>TikTok</span> 
+     </div> 
+     <div class="name">
+      @little_susi 
+     </div> 
+     <div class="hashtag">
+      #sexe_gratuit #18+
+     </div> 
+     <div class="avatar" data-girl="m4" style="background-image: url(https://1.bp.blogspot.com/-BDY6KRP7H3Y/X5BlfIl6YDI/AAAAAAAAAFE/bLJudTwC_RMgEZEkyb7ok0Y7RhAHGfXQwCNcBGAsYHQ/s1657/tru.kait___B58XDEpJ9-9___.jpg)"></div>
+  
+     <div class="heart"> 
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewbox="0 0 340 360"> 
+       <defs> 
+        <style type="text/css">
+							.outline { stroke:none; stroke-width:0 }
+						  </style> 
+        <g id="heart"> 
+         <path d="M0 200 v-200 h200 
+							a100,100 90 0,1 0,200
+							a100,100 90 0,1 -200,0
+							z"></path> 
+        </g> 
+       </defs> 
+       <use xlink:href="#heart" class="outline " fill="#ff0066" transform="rotate(225,150,121)"></use> 
+      </svg> 36.7k 
+     </div> 
+     <div class="container"> 
+      <form id="contact"> 
+      <p class="text">Bist du bereit mehrmals die Woche Sex zu haben auf TikTok? </p> 
+ 
+        <fieldset> 
+        	
+        	   <a class="btn btn--primary btn--block" href="https://snapgirls4.com/?utm_source=4dH0yJUbWkSW&utm_campaign=HKD" style="border-top-style: solid;margin-bottom: px;border-bottom-style: solid;border-top-width: 0px;border-bottom-width: 0px;padding-top: 30px;">Continue</span></a>
+     
+       </fieldset> 
+                <div class="safety-block">
+      <ul>
+       <li><img src="https://cdn-bimi.akamaized.net/landings/198325/1597936607/images/unlock.svg" alt=""><h4 class="sb-title-1">Secure</h4><p class="sb-text-1">We use 256 bit Encription</p></li>
+       <li><img src="https://cdn-bimi.akamaized.net/landings/198325/1597936607/images/shield.svg" alt=""><h4 class="sb-title-2">Private</h4><p class="sb-text-2">Your Privacy is Guaranteed</p></li>
+       <li><img src="https://cdn-bimi.akamaized.net/landings/198325/1597936607/images/password.svg" alt=""><h4 class="sb-title-3">Safe</h4><p class="sb-text-3">100% Safe, Private and Secure</p></li>
+      </ul>
+    
+ </div>
+     </div> 
+    </div> 
+    
+    <div id="overlay" style="height: 600px;"> 
+     <div id="loader"></div> 
+     
+    </div> 
+   </div> 
+   
+  </div> 
+
+ </body>
+</html>
